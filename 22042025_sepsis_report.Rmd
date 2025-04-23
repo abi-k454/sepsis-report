@@ -13,17 +13,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+*Introduction*
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Sepsis is a life-threatening condition defined by organ dysfunction resulting from the body’s dysregulated response to infection (Guarino et al., 2023). It can progress to septic shock, characterised by profound circulatory, cellular, and metabolic abnormalities, which significantly increase the risk of mortality compared to sepsis alone (Guarino et al., 2023; Martin-Loeches, Singer and Leone, 2024). According to the first global report on sepsis incidence and mortality, sepsis accounts for approximately 19.7% of all global deaths (Giamarellos-Bourboulis et al., 2024).
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Current treatments include antibiotics, supportive therapies (such as organ support), and co-adjuvants like steroids and immunoglobulins. However, the growing threat of antimicrobial resistance, along with diagnostic challenges caused by inconsistent definitions of sepsis and the presence of sepsis mimics (e.g., severe trauma or pancreatitis), contribute to overdiagnosis in 15–40% of cases (Martin-Loeches, Singer and Leone, 2024). These issues hinder efforts to reduce sepsis-related morbidity and mortality.
 
-```{r cars}
-summary(cars)
-```
+This underscores the need for reliable biomarkers that can distinguish between sepsis and sepsis mimics and stratify patients based on disease severity. Such biomarkers could facilitate a precision medicine approach, directing specific therapies, such as immunotherapies, to the right patients, rather than relying on broad-spectrum interventions. Advances in omics technologies, particularly transcriptomics using RNA sequencing (RNA-seq), have enabled the discovery of host-derived biomarkers for sepsis (Giamarellos-Bourboulis et al., 2024; Martin-Loeches, Singer and Leone, 2024).
 
-## Including Plots
+This report aims to analyse RNA-seq data from healthy controls, sepsis patients, and septic shock cases to determine whether gene expression profiles can differentiate disease severity. It also investigates an unknown patient’s transcriptomic and microbial profile to predict clinical outcome and inform treatment decisions based on bacterial whole-genome sequencing.
+
+_Methods_
 
 You can also embed plots, for example:
 
